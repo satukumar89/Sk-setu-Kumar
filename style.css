@@ -1,0 +1,487 @@
+/* 🌈 ULTRA-COLORFUL 3D STYLES 🌈 */
+/* General Styles with psychedelic gradient */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #111;
+    background: linear-gradient(
+        135deg,
+        #ff00cc 0%, 
+        #3333ff 25%, 
+        #00ccff 50%, 
+        #33ff33 75%, 
+        #ffff00 100%
+    );
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    min-height: 100vh;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 🚀 3D Header with neon glow */
+header {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 25px 0;
+    box-shadow: 
+        0 5px 15px rgba(255, 0, 204, 0.6),
+        0 -5px 15px rgba(0, 204, 255, 0.6);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid #00ffcc;
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 0, 204, 0.8),
+        rgba(0, 204, 255, 0.8),
+        transparent
+    );
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    text-shadow: 
+        0 0 10px #ff00cc,
+        0 0 20px #00ccff,
+        0 0 30px #ffff00;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px #ff00cc, 0 0 20px #00ccff; }
+    to { text-shadow: 0 0 15px #ff00cc, 0 0 25px #00ccff, 0 0 35px #ffff00; }
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 5px 15px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.4s;
+    position: relative;
+    overflow: hidden;
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+nav a:hover {
+    color: #00ffcc;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 255, 204, 0.4);
+}
+
+nav a:hover::before {
+    left: 100%;
+}
+
+/* 🌌 Section Styles with floating effect */
+.section {
+    padding: 80px 0;
+    position: relative;
+}
+
+.section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(5px);
+    z-index: -1;
+    border-radius: 20px;
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.1),
+        inset 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.section h2 {
+    color: #ff00cc;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    position: relative;
+    display: inline-block;
+}
+
+.section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(
+        90deg,
+        #ff00cc,
+        #00ccff,
+        #ff00cc
+    );
+    border-radius: 2px;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid transparent;
+    background: linear-gradient(
+        45deg,
+        #ff00cc,
+        #00ccff,
+        #ffff00
+    ) border-box;
+    box-shadow: 
+        0 0 20px rgba(255, 0, 204, 0.5),
+        0 0 40px rgba(0, 204, 255, 0.3);
+    animation: borderRotate 5s linear infinite;
+}
+
+@keyframes borderRotate {
+    100% { background-position: 400% 0; }
+}
+
+/* 🎨 Interests Grid with 3D cards */
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    perspective: 1000px;
+}
+
+.interest-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 
+        0 10px 20px rgba(0, 0, 0, 0.1),
+        0 0 0 1px rgba(255, 255, 255, 0.5);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.interest-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        45deg,
+        rgba(255, 0, 204, 0.1),
+        rgba(0, 204, 255, 0.1)
+    );
+    border-radius: 15px;
+    z-index: -1;
+    transform: translateZ(-10px);
+}
+
+.interest-card:hover {
+    transform: translateY(-10px) rotateX(5deg) rotateY(5deg);
+    box-shadow: 
+        0 15px 30px rgba(0, 0, 0, 0.2),
+        0 0 0 1px rgba(255, 255, 255, 0.5),
+        0 0 50px rgba(255, 0, 204, 0.3);
+}
+
+.interest-card h3 {
+    color: #ff00cc;
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+/* 🌠 Memory Gallery with holographic effect */
+.memory-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.memory-item {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 
+        0 5px 15px rgba(0, 0, 0, 0.1),
+        0 0 0 1px rgba(255, 255, 255, 0.5);
+    transition: all 0.5s;
+    position: relative;
+}
+
+.memory-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 0, 204, 0.1) 0%,
+        rgba(0, 204, 255, 0.1) 50%,
+        rgba(255, 255, 0, 0.1) 100%
+    );
+    pointer-events: none;
+}
+
+.memory-item:hover {
+    transform: scale(1.05);
+    box-shadow: 
+        0 15px 30px rgba(0, 0, 0, 0.2),
+        0 0 50px rgba(0, 204, 255, 0.3);
+}
+
+.memory-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.memory-item:hover img {
+    transform: scale(1.1);
+}
+
+.memory-item h3 {
+    color: #00ccff;
+    padding: 15px 15px 0;
+    margin: 0;
+}
+
+.memory-item p {
+    padding: 15px;
+    margin: 0;
+    color: #555;
+}
+
+/* ✨ Form Styles with futuristic inputs */
+.form-group {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #ff00cc;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-family: inherit;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 
+        0 0 0 2px rgba(255, 0, 204, 0.3),
+        inset 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    box-shadow: 
+        0 0 0 2px #00ccff,
+        0 0 20px rgba(0, 204, 255, 0.5),
+        inset 0 0 10px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+textarea {
+    min-height: 150px;
+}
+
+/* 🎆 Button with particle effect */
+.btn {
+    background: linear-gradient(
+        45deg,
+        #ff00cc,
+        #00ccff
+    );
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.4s;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 
+        0 5px 15px rgba(0, 0, 0, 0.2),
+        0 0 20px rgba(255, 0, 204, 0.3);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 
+        0 8px 20px rgba(0, 0, 0, 0.3),
+        0 0 30px rgba(0, 204, 255, 0.5);
+    letter-spacing: 2px;
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(
+        circle,
+        rgba(255, 255, 255, 0.8) 0%,
+        rgba(255, 255, 255, 0) 70%
+    );
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.btn:hover::after {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* 🌈 Footer with animated rainbow border */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 80px;
+    position: relative;
+    backdrop-filter: blur(5px);
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(
+        90deg,
+        #ff00cc,
+        #ff0066,
+        #ff0000,
+        #ff9900,
+        #ffff00,
+        #33ff00,
+        #00ffcc,
+        #0066ff,
+        #3300ff,
+        #cc00ff,
+        #ff00cc
+    );
+    background-size: 200% 100%;
+    animation: rainbow 5s linear infinite;
+}
+
+@keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .profile-img {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+/* ✨ Additional 3D effects */
+@media (min-width: 992px) {
+    .section {
+        transform-style: preserve-3d;
+    }
+    
+    .section::before {
+        transform: translateZ(-10px);
+    }
+}

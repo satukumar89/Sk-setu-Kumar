@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sk setu kumar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome everyone</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#interests">Interests</a></li>
+                    <li><a href="#memories">Memories</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="content-wrapper">
+                    <img src="profile.jpg" alt="My Profile Picture" class="profile-img">
+                    <div class="text-content">
+                        <p>This is where I share my personal journey, thoughts, and experiences.</p>
+                        <p>I'm a private person, but this website is my way of expressing myself to those I choose to share it with.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="interests" class="section">
+            <div class="container">
+                <h2>My Interests</h2>
+                <div class="interests-grid">
+                    <div class="interest-card">
+                        <h3>Hobby 1</h3>
+                        <p>Details about my first interest</p>
+                    </div>
+                    <div class="interest-card">
+                        <h3>Hobby 2</h3>
+                        <p>Details about my second interest</p>
+                    </div>
+                    <div class="interest-card">
+                        <h3>Hobby 3</h3>
+                        <p>Details about my third interest</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="memories" class="section">
+            <div class="container">
+                <h2>Special Memories</h2>
+                <div class="memory-gallery">
+                    <!-- Memory items will be added dynamically with JavaScript -->
+                </div>
+                <button id="add-memory-btn" class="btn">Add a Memory</button>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> My Personal Website. All rights reserved.</p>
+            <p>This content is private and personal.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
