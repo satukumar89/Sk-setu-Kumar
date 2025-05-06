@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="profile-img">
+                <img src="pic.jpg" alt="SETU KUMER" class="profile-photo">
+            </div>
+            <h1>SETU KUMER</h1>
+            <p class="designation">I am a </p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/share/18mY6m8nVS/" title="Facebook">f</a>
+                <a href="#" title="Twitter">t</a>
+                <a href="#" title="LinkedIn">in</a>
+                <a href="#" title="Instagram">ig</a>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Welcome! I am a passionate web developer skilled in creating creative and user-friendly websites. I have been working as a freelance web developer for the last five years.</p>
+                    <p>I work closely with clients to understand their requirements and provide the best solutions. My goal is to build high-quality web products that enhance user experience and help businesses achieve their objectives.</p>
+                </div>
+                <div class="skills">
+                    <div class="skill-item">
+                        <div class="skill-title">
+                            <h3>HTML/CSS</h3>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-title">
+                            <h3>JavaScript</h3>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-title">
+                            <h3>React.js</h3>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-title">
+                            <h3>PHP</h3>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <div class="project-img">Project Image</div>
+                    <div class="project-info">
+                        <h3 class="project-title">E-Commerce Website</h3>
+                        <p class="project-desc">A complete e-commerce platform with product management, payment gateway integration, and user authentication.</p>
+                        <a href="#" class="project-link">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-img">Project Image</div>
+                    <div class="project-info">
+                        <h3 class="project-title">Portfolio Website</h3>
+                        <p class="project-desc">A modern and responsive portfolio website created for a photographer.</p>
+                        <a href="#" class="project-link">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-img">Project Image</div>
+                    <div class="project-info">
+                        <h3 class="project-title">Business Website</h3>
+                        <p class="project-desc">A CMS-based website for a local business with a blog and custom contact form.</p>
+                        <a href="#" class="project-link">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <p>Feel free to contact me if you want to discuss your project or have any questions.</p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i>📧</i>
+                        <span>satukumar8977@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i>📱</i>
+                        <span>+880 1790673089</span>
+                    </div>
+                    <div class="contact-item">
+                        <i>📍</i>
+                        <span>naogaon</span>
+                    </div>
+                </div>
+                
+                <form id="contact-form" class="contact-form" action="mailto:satukumar8977@gmail.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Name" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Your Email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Subject" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="Your Message" id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> SETU KUMER. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

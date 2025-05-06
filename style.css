@@ -1,0 +1,240 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(to right, #007bff, #00c6ff);
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.profile-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
+
+.designation {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Social Links */
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ffeb3b;
+}
+
+/* Navigation Bar */
+nav {
+    background: #333;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #007bff;
+    border-radius: 5px;
+}
+
+/* About Section */
+#about {
+    background: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-text {
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-item {
+    background: #007bff;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-align: left;
+    width: 250px;
+}
+
+.skill-title {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.skill-bar {
+    background: #fff;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.skill-progress {
+    height: 5px;
+    background: yellow;
+    border-radius: 5px;
+}
+
+/* Projects Section */
+.projects-section {
+    background: #f5f5f5;
+    padding: 50px 0;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.project-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.project-desc {
+    font-size: 1rem;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.project-link:hover {
+    background: #0056b3;
+}
+
+/* Contact Section */
+#contact {
+    background: #007bff;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn {
+    background: yellow;
+    color: #007bff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: orange;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
